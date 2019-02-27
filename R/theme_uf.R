@@ -1,6 +1,6 @@
+#' @export
 theme_uf <- function () {
-library(extrafont)
-loadfonts(device = "win")
+extrafont::loadfonts(device = "win")
 windowsFonts(Arial=windowsFont("TT Arial"))
     theme_bw(base_size=12, base_family="Arial") %+replace% 
       theme(

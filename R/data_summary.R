@@ -1,3 +1,5 @@
+
+#' @export
 #+++++++++++++++++++++++++
 # Function to calculate the mean and the standard deviation
   # for each group
