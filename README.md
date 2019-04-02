@@ -22,7 +22,7 @@ _theme_uf_ : GGplot2 theme for UF dissertation template
 _write.list_dev_ : Function to write output of a list 
 
 ```
-write.list_dev(file="test1.loc", top, col.names = F, row.names = T, quote = F)
+write.list_dev(file="data.txt", data_list, col.names = F, row.names = T, quote = F)
 ```
 
 
