@@ -33,3 +33,9 @@ install.packages("devtools")
 library(devtools)
 install_github("dpaudel/dpaudelR") 
 ```
+
+To use:
+
+```
+library(dpaudelR)
+```
