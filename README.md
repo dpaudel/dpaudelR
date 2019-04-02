@@ -1,5 +1,5 @@
 # dpaudelR
-Common R functions:
+[Dev Paudel](dpaudel.github.io)'s commonly used R functions:
 
 _dpaudelR_ consists of some simple functions for data wrangling in R.
 
