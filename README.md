@@ -26,7 +26,7 @@ write.list_dev(file="test1.loc", top, col.names = F, row.names = T, quote = F)
 ```
 
 
-To install:
+### To install:
 
 ```
 install.packages("devtools")
@@ -34,7 +34,7 @@ library(devtools)
 install_github("dpaudel/dpaudelR") 
 ```
 
-To use:
+### To use:
 
 ```
 library(dpaudelR)
