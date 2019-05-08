@@ -43,3 +43,9 @@ _write.list_dev_ : Function to write output of a list
 ```
 write.list_dev(file="data.txt", data_list, col.names = F, row.names = T, quote = F)
 ```
+
+_pin_ : Function to correct Standard Error of heritability estimates in ASREML (ASREML produces SE > 2)
+
+```
+pin(modelN, H2~V1/(V1+V2))
+```
