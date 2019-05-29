@@ -26,6 +26,13 @@ _copy2clipboard_ : This function copies a data frame to excel
 copy2clipboard(dataframe)
 ```
 
+_copyFromExcel_ : This function copies data from Excel to R
+
+```
+# Ctrl + C a dataframe in Excel
+data <- copyFromExcel()
+```
+
 _diagnostics_ : Plot diagnostics in anova
 
 ```
