@@ -54,7 +54,14 @@ anova_hsd <- function (user_model, user_data){
     geom_bar(position=position_dodge(.5), stat="identity", colour="black", width = 0.5)+
     geom_errorbar(mapping = yerrbar1, width=0.2)+
     geom_text(nudge_y=nudge_amt, label=data_merged$groups,  size=4) +
-    ggtitle("HSD grouping")
+    ggtitle("HSD grouping")+
+  theme_bw(base_size=12) %+replace% 
+      theme(
+        panel.background  = element_blank(),
+        plot.background = element_rect(fill="white", colour=NA), 
+        legend.background = element_rect(fill="transparent", colour=NA),
+        legend.key        = element_rect(fill="transparent", colour=NA)
+        )
     #theme_uf() # from dpaudelR package
   print(plot1)
 }
