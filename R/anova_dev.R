@@ -6,8 +6,10 @@
 #' @return A clipboard
 #' @export
 # anova_dev("Petal.Length~Species", iris, "Petal.Length", "Species")
-anova_dev <- function (user_model, user_data, user_treatment, user_group){
+anova_dev <- function (user_model, user_data){
   model1a <- as.formula(user_model)
+  user_treatment <- as.character(formula(user_model))[2]
+  user_group <- as.character(formula(user_model))[3]
   aov1 <- aov(model1a, data=user_data)
   print("ANOVA table")
   print(summary(aov1))
