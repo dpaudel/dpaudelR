@@ -3,7 +3,7 @@
 #' This function produces ANOVA table, HSD table, and barplot then copies table to clipboard
 #'
 #' 
-#' @return A clipboard
+#' @return A ggplot
 #' @export
 # anova_dev(Petal.Length~Species, iris)
 anova_dev <- function (user_model, user_data){
