@@ -21,6 +21,12 @@ library(dpaudelR)
 
 ### Example uses
 
+_anova_dev_ : This function performs ANOVA and Tukey's HSD test as well as plots a barplot.
+
+```
+anova_dev(user_model, dataset)
+anova_dev(Petal.Length~Species, iris)
+```
 
 _copy2clipboard_ : This function copies a data frame to excel
 
