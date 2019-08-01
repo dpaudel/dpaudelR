@@ -10,6 +10,9 @@ anova_hsd <- function (user_model, user_data){
   model1a <- as.formula(user_model)
   user_treatment <- as.character(formula(user_model))[2]
   user_group <- as.character(formula(user_model))[3]
+  library(agricolae)
+  library(ggplot2)
+  library(Rmisc)
   aov1 <- aov(model1a, data=user_data)
   print("ANOVA table")
   print(summary(aov1))
