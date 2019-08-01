@@ -5,7 +5,7 @@
 #' 
 #' @return A clipboard
 #' @export
-# anova_dev("Petal.Length~Species", iris, "Petal.Length", "Species")
+# anova_dev(Petal.Length~Species, iris)
 anova_dev <- function (user_model, user_data){
   model1a <- as.formula(user_model)
   user_treatment <- as.character(formula(user_model))[2]
@@ -42,15 +42,15 @@ anova_dev <- function (user_model, user_data){
                          ymax = paste(yerr_names1,collapse='+'))
   nudge_amt <- 0
   if (mean(data_merged$se) < 1){
-      nudge_amt <- 5*mean(data_merged$se)
+    nudge_amt <- 5*mean(data_merged$se)
   } else {
     nudge_amt <- 2*mean(data_merged$se)}
-# Plot
-plot1 <- ggplot(data_merged, aes_string(x=user_group, y=user_treatment, fill=user_group))+
+  # Plot
+  plot1 <- ggplot(data_merged, aes_string(x=user_group, y=user_treatment, fill=user_group))+
     geom_bar(position=position_dodge(.5), stat="identity", colour="black", width = 0.5)+
     geom_errorbar(mapping = yerrbar1, width=0.2)+
-    geom_text(nudge_y=nudge_amt, label=groups,  size=4) +
+    geom_text(nudge_y=nudge_amt, label=data_merged$groups,  size=4) +
     ggtitle("HSD grouping")+
     theme_uf() # from dpaudelR package
-print(plot1)
+  print(plot1)
 }
