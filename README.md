@@ -21,7 +21,7 @@ library(dpaudelR)
 
 ### Example uses
 
-_anova_dev_ : This function performs ANOVA and Tukey's HSD test as well as plots a barplot.
+_anova_dev_ : This function performs single-factor ANOVA and outputs Tukey's HSD test as well as a barplot.
 
 ```
 anova_dev(user_model, dataset)
