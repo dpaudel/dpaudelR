@@ -6,6 +6,8 @@ _dpaudelR_ consists of some simple functions for data wrangling in R.
 ### To install:
 
 ```
+devtools::install_github("dpaudel/dpaudelR") 
+# OR
 install.packages("devtools")
 library(devtools)
 install_github("dpaudel/dpaudelR") 
