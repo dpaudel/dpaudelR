@@ -31,7 +31,7 @@ anova_dev <- function (user_model, user_data, user_treatment, user_group){
   print("HSD ranking")
   print(data_merged)
   # Print
-  copy2clipboard(iris_merged)
+  copy2clipboard(data_merged)
   print("Use Ctrl+V to paste summary means into Excel worksheet")
   
   # Create standard error bars
