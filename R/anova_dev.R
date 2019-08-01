@@ -1,3 +1,10 @@
+#' ANOVA dev
+#'
+#' This function produces ANOVA table, HSD table, and barplot then copies table to clipboard
+#'
+#' 
+#' @return A clipboard
+#' @export
 # anova_dev("Petal.Length~Species", iris, "Petal.Length", "Species")
 anova_dev <- function (user_model, user_data, user_treatment, user_group){
   model1a <- as.formula(user_model)
