@@ -1,12 +1,12 @@
-#' ANOVA dev
+#' ANOVA HSD
 #'
 #' This function produces ANOVA table, HSD table, and barplot then copies table to clipboard
 #'
 #' 
 #' @return A ggplot
 #' @export
-# anova_dev(Petal.Length~Species, iris)
-anova_dev <- function (user_model, user_data){
+# anova_hsd(Petal.Length~Species, iris)
+anova_hsd <- function (user_model, user_data){
   model1a <- as.formula(user_model)
   user_treatment <- as.character(formula(user_model))[2]
   user_group <- as.character(formula(user_model))[3]
