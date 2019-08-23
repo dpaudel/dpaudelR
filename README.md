@@ -21,12 +21,20 @@ library(dpaudelR)
 
 ### Example uses
 
-_anova_dev_ : This function performs single-factor ANOVA and outputs Tukey's HSD test as well as a barplot.
+_anova_hsd_ : This function performs single-factor ANOVA and outputs Tukey's HSD test as well as a barplot.
 
 ```
-anova_dev(user_model, dataset)
-anova_dev(Petal.Length~Species, iris)
+anova_hsd(user_model, dataset)
+anova_hsd(Petal.Length~Species, iris)
 ```
+
+_anova_lsd_ : This function performs single-factor ANOVA and outputs LSD test as well as a barplot.
+
+```
+anova_lsd(user_model, dataset)
+anova_lsd(Petal.Length~Species, iris)
+```
+
 
 _copy2clipboard_ : This function copies a data frame to excel
 
