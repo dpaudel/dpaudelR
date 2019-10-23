@@ -40,6 +40,9 @@ _copy2clipboard_ : This function copies a data frame to excel
 
 ```
 copy2clipboard(dataframe)
+# If the data is a list then follow this:
+bind_rows(list) %>% copy2clipboard()
+bind_rows(summary(model_nlm1)) %>% copy2clipboard()
 ```
 
 _copyFromExcel_ : This function copies data from Excel to R
