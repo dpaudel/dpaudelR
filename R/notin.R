@@ -6,4 +6,4 @@
 #' @return Not in
 #' @export
 
-`%notin%` <- Negate(`%in%`)
+'%!in%' <- function(x,y)!('%in%'(x,y))
