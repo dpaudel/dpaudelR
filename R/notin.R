@@ -5,4 +5,4 @@
 #' 
 #' @export
 
-'%!in%' <- function(x,y)!('%in%'(x,y))
+'%notin%' <- function(x,y)!('%in%'(x,y))
