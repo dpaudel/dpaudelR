@@ -58,6 +58,12 @@ _diagnostics_ : Plot diagnostics in anova
 diagnostics(aov1)
 ```
 
+_hapMap2genlight2.R_ : Convert TASSEL hapmap file to _genlight_ object for adegenet
+
+```
+mygeno=hapMap2genlight2(file.choose()) # choose hapmap file
+mygeno1 <- mygeno[[1]] # genlight object for DAPC
+```
 _theme_uf_ : GGplot2 theme for UF dissertation template
 
 ```
