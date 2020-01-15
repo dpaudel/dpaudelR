@@ -61,7 +61,7 @@ diagnostics(aov1)
 _hapMap2genlight2.R_ : Convert TASSEL hapmap file to _genlight_ object for adegenet
 
 ```
-mygeno=hapMap2genlight2(file.choose()) # choose hapmap file
+mygeno=hapMap2genlight2(file.choose()) # choose hapmap file (remove # from rs# and assembly# on column names first)
 mygeno1 <- mygeno[[1]] # genlight object for DAPC
 ```
 
