@@ -64,6 +64,13 @@ _hapMap2genlight2.R_ : Convert TASSEL hapmap file to _genlight_ object for adege
 mygeno=hapMap2genlight2(file.choose()) # choose hapmap file
 mygeno1 <- mygeno[[1]] # genlight object for DAPC
 ```
+
+_pin_ : Function to correct Standard Error of heritability estimates in ASREML (ASREML produces SE > 2)
+
+```
+pin(modelN, H2~V1/(V1+V2))
+```
+
 _theme_uf_ : GGplot2 theme for UF dissertation template
 
 ```
@@ -76,8 +83,3 @@ _write.list_dev_ : Function to write output of a list
 write.list_dev(file="data.txt", data_list, col.names = F, row.names = T, quote = F)
 ```
 
-_pin_ : Function to correct Standard Error of heritability estimates in ASREML (ASREML produces SE > 2)
-
-```
-pin(modelN, H2~V1/(V1+V2))
-```
