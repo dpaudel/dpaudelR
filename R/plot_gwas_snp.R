@@ -4,6 +4,7 @@
 #' 
 #' @return A ggplot
 #' @export
+
 # plot_gwas_snp(genotype_data,phenotype_data,'snp_name','phenotype_name')
 # plot_gwas_snp(myGDh,pheno_292,'2_25641','Days_to_flower')
 
