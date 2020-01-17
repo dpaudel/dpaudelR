@@ -1,5 +1,5 @@
 Package: dpaudelR
-Title: What the Package Does (one line, title case)
+Title: Simple Tools For Data Wrangling
 Version: 0.0.0.9000
 Authors@R: person("Dev", "Paudel", email = "dpaudel@outlook.com", role = c("aut", "cre"))
 Description: Tidbits in R.
