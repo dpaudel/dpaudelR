@@ -71,6 +71,13 @@ _pin_ : Function to correct Standard Error of heritability estimates in ASREML (
 pin(modelN, H2~V1/(V1+V2))
 ```
 
+_plot_gwas_snp_ : Function to give allele summary and plot in GAPIT
+
+```
+# plot_gwas_snp(genotype_data,phenotype_data,'snp_name','phenotype_name')
+plot_gwas_snp(myGDh,pheno_292,'2_25641','Days_to_flower')
+```
+
 _theme_uf_ : GGplot2 theme for UF dissertation template
 
 ```
