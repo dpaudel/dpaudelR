@@ -3,10 +3,10 @@
 #' For a given SNP name, this function gives summary and boxplot of the phenotype from hapmap file
 #' 
 #' @return A ggplot
+#'
 #' @export
-
-# plot_gwas_snp(genotype_data,phenotype_data,'snp_name','phenotype_name')
-# plot_gwas_snp(myGDh,pheno_292,'2_25641','Days_to_flower')
+#' plot_gwas_snp(genotype_data,phenotype_data,'snp_name','phenotype_name')
+#' plot_gwas_snp(myGDh,pheno_292,'2_25641','Days_to_flower')
 
 plot_gwas_snp <- function(myGDh101,pheno101,snp_name,phenotype_name){
   names101 <- c((myGDh101[1,1:11] %>% unlist() %>% as.vector()), (pheno101$taxa %>% as.vector)) %>% as.vector()
