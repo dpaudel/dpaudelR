@@ -9,7 +9,6 @@
 #' plot_gwas_snp(myGDh_292,pheno_only90,'2_37496','DWH1_2018')
 #' myGDh101 = myGDh_292; pheno101 = pheno_only90; snp_name='2_37496'; phenotype_name='DWH1_2018'
 
-
 plot_gwas_snp <- function(myGDh101,pheno101,snp_name,phenotype_name){
     names_101 <- myGDh101[1,] %>% unlist() %>% as.vector()
   myGDh_101_df <- myGDh101[-1,]
