@@ -14,11 +14,11 @@ plot_gwas_snp <- function(myGDh101,pheno101,snp_name,phenotype_name){
   myGDh_101_df <- myGDh101[-1,]
   colnames(myGDh_101_df)<- names_101
   names_selected <- c((myGDh101[1,1:11] %>% unlist() %>% as.vector()), (pheno101$taxa %>% as.vector)) %>% as.vector()
-  myGDh101 <- myGDh_101_df %>% select(names_selected) 
+  myGDh101 <- myGDh_101_df %>% dplyr::select(names_selected) 
     # Summary of the SNP allele
-  list1 <- (myGDh101 %>% filter(rs==snp_name) %>% as.data.frame() %>% select(-c(1:11)) %>% t() %>% summary())
+  list1 <- (myGDh101 %>% filter(rs==snp_name) %>% as.data.frame() %>% dplyr::select(-c(1:11)) %>% t() %>% summary())
   # Extract alleles
-  allele101 <- myGDh101 %>% filter(rs==snp_name) %>% as.data.frame() %>% select(-c(1:11)) %>% t() %>% as.data.frame()
+  allele101 <- myGDh101 %>% filter(rs==snp_name) %>% as.data.frame() %>% dplyr::select(-c(1:11)) %>% t() %>% as.data.frame()
   allele101$taxa <- row.names(allele101)
   colnames(allele101) <- c('Allele','taxa')
   allele_pheno101 <- inner_join(pheno101,allele101)
