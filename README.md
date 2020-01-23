@@ -52,6 +52,11 @@ _copyFromExcel_ : This function copies data from Excel to R
 data <- copyFromExcel()
 ```
 
+_data_transform_ : Transform data and plot histogram
+
+```
+data_transform(phenotype, 'Days_to_flower')
+```
 _diagnostics_ : Plot diagnostics in anova
 
 ```
