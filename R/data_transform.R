@@ -1,9 +1,11 @@
-#### function to plot histograms of different data transformations ####
-# dataframe, column_name
-# dataframe=pheno_292
-# column_name='Days_to_pod_maturity'
-# data_transform(dataframe, 'column_name')
-# data_transform(phenotype,'Days_to_pod_maturity')
+#` Data transform
+#'
+#' This function transforms data and plots histogram
+#' 
+#' @export
+#' dataframe, column_name
+#' data_transform(dataframe, 'column_name')
+#' data_transform(phenotype,'Days_to_pod_maturity')
 data_transform <- function(dataframe, column_name){
   newd <- data.frame(dataframe %>% select(column_name))
   newd$log <- log(newd[,1])
