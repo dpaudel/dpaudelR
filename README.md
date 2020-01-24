@@ -52,7 +52,7 @@ _copyFromExcel_ : This function copies data from Excel to R
 data <- copyFromExcel()
 ```
 
-_data_transform_ : Transform data and plot histogram
+_data_transform_ : Transform data and plot histogram for log, log10, square root, and arcsine transformation
 
 ```
 # data_transform(dataframe, 'column_name', numberOfBins)
