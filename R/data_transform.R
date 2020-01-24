@@ -14,6 +14,9 @@ data_transform <- function(dataframe, column_name, numbins){
   if(max(newd[,1]) <=1 & min(newd[,1]>=0)){
   newd$asin_sqrt <- asin(sqrt(newd[,1]))
   }
+  if(max(newd[,1]) <=100 & min(newd[,1]>=0)){
+    newd$asin_sqrt <- asin(sqrt((newd[,1]/100)))
+  }
   newd %>% 
     tidyr::gather(variable, value) %>% 
     ggplot(aes(value)) + 
