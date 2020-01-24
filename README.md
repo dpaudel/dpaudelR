@@ -55,7 +55,8 @@ data <- copyFromExcel()
 _data_transform_ : Transform data and plot histogram
 
 ```
-data_transform(phenotype, 'Days_to_flower')
+# data_transform(dataframe, 'column_name', numberOfBins)
+data_transform(phenotype, 'Days_to_flower', 30)
 ```
 _diagnostics_ : Plot diagnostics in anova
 
