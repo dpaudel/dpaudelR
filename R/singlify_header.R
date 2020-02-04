@@ -1,9 +1,12 @@
+#` Singlify header
+#'
+#' This function merges headers in multiple rows to a single row. 
+#' 
+#' @export
+#' input: "filename", number of rows to skip, number of rows of header
+#' example: singlify_header('Griffin_20200204/SCRI II Bermudagrass SSPN Griffin Final.xlsx', nskip=2,nheaders=4)
 
-# input: rows to skip, number of header rows
-nheaders=2
-nskip =2
-filename = 'Griffin_20200204/SCRI II Bermudagrass SSPN Griffin Final.xlsx'
-singlify_header <- function (filename, nheaders, nskip){
+singlify_header <- function (filename, skip, nheaders){
 headers <- read_excel(filename, col_names = FALSE, na="..", n_max = nheaders, skip=nskip)
 
 # fill only works down or up, so have to transpose headers
