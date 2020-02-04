@@ -93,7 +93,7 @@ _singlify_header_ : Function to create a single header from multiple header rows
 singlify_header('Griffin_20200204/SCRI II Bermudagrass SSPN Griffin Final.xlsx', nskip=2,nheaders=4)
 ```
 
-_theme_uf_ : GGplot2 theme for UF dissertation template
+_theme_uf_ : GGplot2 theme for _University of Florida_ dissertation template
 
 ```
 + theme_uf()
