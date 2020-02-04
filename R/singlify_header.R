@@ -6,14 +6,18 @@
 #' input: "filename", number of rows to skip, number of rows of header
 #' example: singlify_header('Griffin_20200204/SCRI II Bermudagrass SSPN Griffin Final.xlsx', nskip=2,nheaders=4)
 
-singlify_header <- function (filename, skip, nheaders){
+singlify_header <- function (filename, nheaders, nskip){
 headers <- read_excel(filename, col_names = FALSE, na="..", n_max = nheaders, skip=nskip)
 
 # fill only works down or up, so have to transpose headers
 long_headers = data.frame(t(headers))
+
+# merge headers 
+merged_header <- apply(long_headers, 1, paste, collapse="_")
+
 # Add column names down the columns
 #long_headers <- fill(long_headers,1:nheaders) # all four columns
-headers <- data.frame(t(long_headers)) # back to vertical.
+headers <- data.frame(t(merged_header)) # back to vertical.
 
 # summarize using str_c from stringr which collapses strings.
 # summarize_all makes it work on all columns.
