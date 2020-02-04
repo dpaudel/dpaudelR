@@ -86,6 +86,13 @@ plot_gwas_snp(myGDh,pheno_292,'2_25641','Days_to_flower')
 
 ```
 
+_singlify_header_ : Function to create a single header from multiple header rows
+
+```
+# singlify_header("filename", number of rows to skip, number of rows with headers)
+singlify_header('Griffin_20200204/SCRI II Bermudagrass SSPN Griffin Final.xlsx', nskip=2,nheaders=4)
+```
+
 _theme_uf_ : GGplot2 theme for UF dissertation template
 
 ```
