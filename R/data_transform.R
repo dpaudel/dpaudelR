@@ -17,6 +17,8 @@ data_transform <- function(dataframe, column_name, numbins){
   if(max(newd[,1]) <=100 & min(newd[,1]>=0)){ # convert to proportion for arcsine transformation
     newd$asin_sqrt <- asin(sqrt((newd[,1]/100)))
   }
+  # remove -Inf in log values for 0
+  newd[newd=="-Inf"]<-NA
   newd %>% 
     tidyr::gather(variable, value) %>% 
     ggplot(aes(value)) + 
