@@ -7,7 +7,7 @@
 #' data_transform(dataframe, 'column_name', numberOfBins)
 #' data_transform(phenotype,'Days_to_pod_maturity', 30)
 data_transform <- function(dataframe, column_name, numbins){
-  newd <- data.frame(dataframe %>% dplyr::select(column_name) %>%drop_na())
+  newd <- data.frame(dataframe %>% dplyr::select(column_name) %>%na.omit())
   newd$log <- log(newd[,1])
   newd$log10 <- log10(newd[,1])
   newd$sqrt <- sqrt(newd[,1])
