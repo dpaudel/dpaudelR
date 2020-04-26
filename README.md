@@ -61,7 +61,7 @@ data_transform(phenotype, 'Days_to_flower', 30)
 _diagnostics_ : Plot diagnostics in anova
 
 ```
-diagnostics(aov1)
+diagnostics(residuals, fittedvalues)
 ```
 
 _hapMap2genlight2.R_ : Convert TASSEL hapmap file to _genlight_ object for adegenet
