@@ -3,9 +3,9 @@
 #' This function produces circos plots from blast result tabular format
 #'
 #' 
-#' @return A circosplot
+#' @return A ggplot
 #' @export
-# dp_circlize_blast(blast_output)
+#' dp_circlize_blast(blast_output)
 dp_circlize_blast<- function(testblast1){
   blast_header <- c("queryId", "subjectId", "percIdentity", "alnLength", "mismatchCount", "gapOpenCount", "queryStart", "queryEnd", "subjectStart", "subjectEnd", "eVal", "bitScore")
   colnames(test_blast1)<- blast_header
