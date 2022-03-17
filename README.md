@@ -64,6 +64,12 @@ _diagnostics_ : Plot diagnostics in anova
 diagnostics(residuals, fittedvalues)
 ```
 
+_dp_circlize_blast_ : Create a circos plot from blast output tablular format
+
+```
+dp_circlize_blast(blastoutput)
+```
+
 _hapMap2genlight2.R_ : Convert TASSEL hapmap file to _genlight_ object for adegenet
 
 ```
