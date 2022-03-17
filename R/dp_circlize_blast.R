@@ -10,7 +10,6 @@
 dp_circlize_blast <- function(testblast1){
   blast_header <- c("queryId", "subjectId", "percIdentity", "alnLength", "mismatchCount", "gapOpenCount", "queryStart", "queryEnd", "subjectStart", "subjectEnd", "eVal", "bitScore")
   colnames(test_blast1)<- blast_header
-library(circlize)  
   length_query <- test_blast1 %>% group_by(queryId) %>% summarise(chrlength=max(queryEnd)) %>% rename(chr=queryId) %>% mutate(type="query")
   length_subject <- test_blast1 %>% group_by(subjectId) %>% summarise(chrlength=max(subjectEnd))%>% rename(chr=subjectId) %>% mutate(type="subject")
   
