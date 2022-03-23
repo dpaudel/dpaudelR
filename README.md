@@ -67,7 +67,8 @@ diagnostics(residuals, fittedvalues)
 _dp_circlize_blast_ : Create a circos plot from blast output tablular format
 
 ```
-dp_circlize_blast(blastoutput)
+test_blast1 <- read.table("blast_output_tabular_format.txt")
+dp_circlize_blast(test_blast1)
 ```
 
 _hapMap2genlight2.R_ : Convert TASSEL hapmap file to _genlight_ object for adegenet
