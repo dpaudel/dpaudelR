@@ -26,8 +26,8 @@ dp_circlize_blast<- function(testblast1){
     chr=CELL_META$sector.index
     xlim=CELL_META$xlim
     ylim=CELL_META$ylim
-    circos.text(mean(xlim),mean(ylim),chr, cex=0.5,col=col_text,facing="bending.inside",niceFacing=TRUE)
-    facing = c("inside", "outside", "reverse.clockwise", "clockwise", "downward", "bending.inside","bending.outside")
+    circos.text(mean(xlim),mean(ylim),chr, cex=0.3,col=col_text,facing="clockwise",niceFacing=TRUE)
+    #facing = c("inside", "outside", "reverse.clockwise", "clockwise", "downward", "bending.inside","bending.outside")
   },
   bg.col=(as.numeric(as.factor(allchr_length$type))+2),bg.border=F,track.height=0.06)
   #bg.col="grey90",bg.border=F,track.height=0.06)
