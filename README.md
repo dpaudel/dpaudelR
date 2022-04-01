@@ -83,7 +83,13 @@ _pin_ : Function to correct Standard Error of heritability estimates in ASREML (
 ```
 pin(modelN, H2~V1/(V1+V2))
 ```
+_plot_blast_segment_ : Function to give graphic output from blast results
 
+```
+# plot_blast_segment(blast_output)
+plot_blast_segment(read.table("blast_output_tabular.txt"))
+
+```
 _plot_gwas_snp_ : Function to give allele summary and plot in GAPIT
 
 ```
