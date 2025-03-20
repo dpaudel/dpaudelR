@@ -77,6 +77,11 @@ _hapMap2genlight2.R_ : Convert TASSEL hapmap file to _genlight_ object for adege
 mygeno=hapMap2genlight2(file.choose()) # choose hapmap file (remove # from rs# and assembly# on column names first)
 mygeno1 <- mygeno[[1]] # genlight object for DAPC
 ```
+_merge_csv_files_ : Merge CSV files provided in a given directory
+
+```
+merge_csv_files("directory_name","csv")
+```
 
 _pin_ : Function to correct Standard Error of heritability estimates in ASREML (ASREML produces SE > 2)
 
