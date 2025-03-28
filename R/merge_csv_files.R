@@ -10,7 +10,7 @@
 
 merge_csv_files <- function(directory, pattern) {
   # List all CSV files in the directory matching the pattern
-  csv_files <- list.files(path = directory, pattern = pattern, full.names = TRUE)
+  csv_files <- list.files(path = directory, pattern = pattern, full.names = TRUE, recursive = TRUE)
   
   # Initialize an empty list to store the dataframes
   df_list <- list()
